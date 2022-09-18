@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Wrdt</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="box">
+      <section>
+        <img src="https://lh3.googleusercontent.com/a-/ACNPEu_7z7RL4MgtZfD_ondcunpFCkUd5zmrPnccnnicrg=s792-p-rw-no">
+      </section>
+      <section>
+        <h1>Wrdt</h1>
+        <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur.</p></span>
+        <p id="time"></p>
+      </section>
+    </div>
+    </div>
+   
+   <script>
+     setInterval(function(){
+       let time = new Date();
+       document.getElementById("time").innerHTML = 
+       time.getHours() +" : "+
+       time.getMinutes() +" : "+
+       time.getSeconds();
+     },1000);
+   </script>
+   
+  </body>
+</html>
