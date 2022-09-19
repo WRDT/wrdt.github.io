@@ -1,4 +1,4 @@
- :root {
+:root {
   --pri: #212121;
   --sec: #2A272A;
   --txtpri: #86A8E7;
@@ -47,6 +47,11 @@ img {
   border-radius: 100%;
   display: block;
   margin: 5px auto;
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(0%);
 }
 
 section h1{
