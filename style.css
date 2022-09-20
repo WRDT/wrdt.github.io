@@ -1,26 +1,27 @@
-:root {
+ :root {
   --pri: #212121;
   --sec: #2A272A;
   --txtpri: #86A8E7;
   --txtsec: #D16BA5;
  }
-
  
-body {
-  background-color: var(--sec);
-  padding: 5%;
-  margin: auto;
+* {
+  box-sizing: border-box;
+  text-align: center;
 }
 
-.container {
+body {
+  background-color: var(--sec);
+}
+
+.border {
   margin: 50% auto;
-  width: fit-content;
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   border-radius: 20px;
   transition: all .3s;
 }
 
-.container:hover {
+.border:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
@@ -28,12 +29,11 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--pri);
-  padding: 5%;
-  border-radius: 15px;
-  justify-content: center;
+  padding: 30px 15px;
+  border-radius: 20px;
   align-items: center;
-  margin: auto;
   transition: all .2s;
+  gap: 5px;
 }
 
 .box:hover {
@@ -46,7 +46,7 @@ img {
   max-width: 50%;
   border-radius: 100%;
   display: block;
-  margin: 5px auto;
+  margin: auto;
   filter: grayscale(100%);
 }
 
@@ -54,25 +54,33 @@ img:hover {
   filter: grayscale(0%);
 }
 
-section h1{
-  text-align: center;
+h1{
   font-weight: bold;
-  width: 90%;
   color: var(--txtpri);
-  margin: auto;
-  padding: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-section p {
-  text-align: center;
-  width: 90%;
+p {
   color: var(--txtsec);
-  margin: auto;
-  padding: 5px;
   font-size: 0.8rem;
+}
+
+#ig, #fb{
+  border-radius: 15px;
+  border: 2px solid var(--sec);
+  background-color: var(--txtpri);
+  padding: 10px;
+  width: 200px;
+}
+
+#ig a, #fb a {
+  color: var(--sec);
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 #time {
   margin: 5px auto;
+  color: gray;
 }
